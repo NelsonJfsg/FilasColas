@@ -40,7 +40,7 @@ public class Operacion {
 
         //Buscar si la oracion tiene alguna vocal o signo.
         for (int i = 0; i < mensaje.length(); i++) {
-            if ((mensaje.charAt(i) == 'A') || (mensaje.charAt(i) == 'E') || (mensaje.charAt(i) == 'I') || (mensaje.charAt(i) == 'O') || (mensaje.charAt(i) == 'U') || (mensaje.charAt(i) == ' '|| (mensaje.charAt(i) == '!') || (mensaje.charAt(i) == '?'))) {
+            if ((mensaje.charAt(i) == 'A') || (mensaje.charAt(i) == 'E') || (mensaje.charAt(i) == 'I') || (mensaje.charAt(i) == 'O') || (mensaje.charAt(i) == 'U')) {
                 nuevoMensaje = nuevoMensaje + Invertir(mensaje.substring(pos, i)) + mensaje.charAt(i);
                 pos = i + 1;
             }
